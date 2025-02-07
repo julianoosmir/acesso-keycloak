@@ -20,7 +20,7 @@ import tutorial.repository.PersonRepository;
 @RequiredArgsConstructor
 @ApplicationScoped
 @Slf4j
-public class AuthServiceImpl {
+public class AuthService {
 
     private final PersonRepository personRepository;
 

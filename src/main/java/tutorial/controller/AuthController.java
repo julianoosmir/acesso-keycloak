@@ -9,7 +9,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
 import tutorial.dto.UserInputLoginDTO;
-import tutorial.service.AuthServiceImpl;
+import tutorial.service.AuthService;
 
 @ApplicationScoped
 @Path("/auth")
@@ -18,7 +18,7 @@ import tutorial.service.AuthServiceImpl;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final AuthServiceImpl loginService;
+    private final AuthService loginService;
 
     @POST
     @Path("/user/login")
