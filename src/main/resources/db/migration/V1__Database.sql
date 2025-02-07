@@ -41,7 +41,7 @@ CREATE TABLE person_role
 );
 ALTER TABLE person_role
     ADD CONSTRAINT CK__person_ro__roles__0F624AF8
-        CHECK (roles IN ('COMPANY', 'STUDENT', 'CITIZEN', 'ADMIN'));
+        CHECK (roles IN ('COMPANY', 'STUDENT', 'CANDIDATE', 'ADMIN'));
 
 
 
@@ -73,18 +73,18 @@ END;
 $$ LANGUAGE plpgsql;
 
 SELECT inserir_person_role('36627119668', 'ADMIN');
-SELECT inserir_person_role('36627119668', 'CITIZEN');
+SELECT inserir_person_role('36627119668', 'CANDIDATE');
 
-SELECT inserir_person_role('74999527111', 'CITIZEN');
-SELECT inserir_person_role('39735167905', 'CITIZEN');
-SELECT inserir_person_role('29494712935', 'CITIZEN');
-SELECT inserir_person_role('39359207683', 'CITIZEN');
-SELECT inserir_person_role('73044709334', 'CITIZEN');
-SELECT inserir_person_role('16181652086', 'CITIZEN');
-SELECT inserir_person_role('97049414204', 'CITIZEN');
-SELECT inserir_person_role('48620198890', 'CITIZEN');
-SELECT inserir_person_role('22838082272', 'CITIZEN');
-SELECT inserir_person_role('83367356662', 'CITIZEN');
-SELECT inserir_person_role('76308495085', 'CITIZEN');
+SELECT inserir_person_role('74999527111', 'CANDIDATE');
+SELECT inserir_person_role('39735167905', 'CANDIDATE');
+SELECT inserir_person_role('29494712935', 'CANDIDATE');
+SELECT inserir_person_role('39359207683', 'CANDIDATE');
+SELECT inserir_person_role('73044709334', 'CANDIDATE');
+SELECT inserir_person_role('16181652086', 'CANDIDATE');
+SELECT inserir_person_role('97049414204', 'CANDIDATE');
+SELECT inserir_person_role('48620198890', 'CANDIDATE');
+SELECT inserir_person_role('22838082272', 'CANDIDATE');
+SELECT inserir_person_role('83367356662', 'CANDIDATE');
+SELECT inserir_person_role('76308495085', 'CANDIDATE');
 
 
